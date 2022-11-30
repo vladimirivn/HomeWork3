@@ -38,10 +38,17 @@ public class Main {
         s = 786; // Можно объявить и как int
         bool = false;
         s1 = 569; // Можно объявить и как int
-        i = -159;
+        i = -159; // Можно объявить и как short
         i1 = 27897; // Можно объявить и как short
         d1 = 67.f;
 
+        System.out.println("--------------Задача 3-------------------------");
 
+        byte firstClassroom = 23;
+        byte secondClassroom = 27;
+        byte thirdClassroom = 30;
+        short totalPapers = 480;
+        int papersPerStudent = totalPapers / (firstClassroom + secondClassroom + thirdClassroom);
+        System.out.println("На каждого ученика рассчитано " + papersPerStudent + " листов бумаги");
     }
 }
