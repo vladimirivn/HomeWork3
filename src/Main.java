@@ -3,7 +3,7 @@ public class Main {
 
         System.out.println("Домашнее задание");
 
-        System.out.println("Задача 1");
+        System.out.println("--------------Задача 1-------------------------");
 
         byte bVar = 111;
         short shVar = 3333;
@@ -21,5 +21,27 @@ public class Main {
         System.out.println("Значение переменной dVar с типом byte равно: " + dVar);
         System.out.println("Значение переменной chVar с типом byte равно: " + chVar);
         System.out.println("Значение переменной isVar с типом byte равно: " + isVar);
+
+        System.out.println("--------------Задача 2-------------------------");
+
+        double d;
+        float d1;
+        long l;
+        byte b;
+        short s, s1;
+        boolean bool;
+        int i, i1;
+
+        d = 27.12;
+        l = 987678965549L;
+        b = 2;
+        s = 786; // Можно объявить и как int
+        bool = false;
+        s1 = 569; // Можно объявить и как int
+        i = -159;
+        i1 = 27897; // Можно объявить и как short
+        d1 = 67.f;
+
+
     }
 }
