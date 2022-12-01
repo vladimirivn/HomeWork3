@@ -8,39 +8,30 @@ public class Main {
         byte bVar = 111;
         short shVar = 3333;
         int iVar = 1234567890;
-        long lVar = 45L;
-        float fVar = 0.234f;
+        long lVar = 450000000000L;
+        float fVar = 0.234F;
         double dVar = 13.12;
         char chVar = 42;
         boolean isVar = shVar < 5000;
         System.out.println("Значение переменной bVar с типом byte равно: " + bVar);
-        System.out.println("Значение переменной shVar с типом byte равно: " + shVar);
-        System.out.println("Значение переменной iVar с типом byte равно: " + iVar);
-        System.out.println("Значение переменной lVar с типом byte равно: " + lVar);
-        System.out.println("Значение переменной fVar с типом byte равно: " + fVar);
-        System.out.println("Значение переменной dVar с типом byte равно: " + dVar);
-        System.out.println("Значение переменной chVar с типом byte равно: " + chVar);
-        System.out.println("Значение переменной isVar с типом byte равно: " + isVar);
+        System.out.println("Значение переменной shVar с типом short равно: " + shVar);
+        System.out.println("Значение переменной iVar с типом int равно: " + iVar);
+        System.out.println("Значение переменной lVar с типом long равно: " + lVar);
+        System.out.println("Значение переменной fVar с типом float равно: " + fVar);
+        System.out.println("Значение переменной dVar с типом double равно: " + dVar);
+        System.out.println("Значение переменной chVar с типом char равно: " + chVar);
+        System.out.println("Значение переменной isVar с типом boolean равно: " + isVar);
 
         System.out.println("--------------Задача 2-------------------------");
 
-        double d;
-        float d1;
-        long l;
-        byte b;
-        short s, s1;
-        boolean bool;
-        int i, i1;
-
-        d = 27.12;
-        l = 987678965549L;
-        b = 2;
-        s = 786; // Можно объявить и как int
-        bool = false;
-        s1 = 569; // Можно объявить и как int
-        i = -159; // Можно объявить и как short
-        i1 = 27897; // Можно объявить и как short
-        d1 = 67.f;
+        float var1 = 27.12F;
+        long var2 = 987_678_965_549L;
+        double var3 = 2.786;
+        boolean var4 = false;
+        char var5 = 569;
+        short var6 = -159; //
+        int var7 = 27897; //
+        byte var8 = 67;
 
         System.out.println("--------------Задача 3-------------------------");
 
@@ -82,7 +73,7 @@ public class Main {
         System.out.println("--------------Задача 6-------------------------");
 
         byte numBananas = 5;  // количество бананов
-        byte weightOneBananа = 80; // вес одгого банана в граммах
+        byte weightOneBanana = 80; // вес одгого банана в граммах
         int volumeMilk = 200; // объем молока в мл
         byte weightVolumeMilk_100 = 105; // граммов в 100 мл молока
         byte numIceCream = 2; // количество брикетов мороженного
@@ -90,8 +81,24 @@ public class Main {
         byte numEgg = 4; // количество яиц
         byte weightOneEgg = 70; // вес одного яйца в граммах
 
-        int recipeInGram = numBananas * weightOneBananа + volumeMilk/100 * weightVolumeMilk_100 + numIceCream * weightOneIceCream + numEgg * weightOneEgg;
+        int recipeInGram = numBananas * weightOneBanana + volumeMilk/100 * weightVolumeMilk_100 + numIceCream * weightOneIceCream + numEgg * weightOneEgg;
         System.out.println("Вес спорт-завтрака в граммах - " + recipeInGram);
-        System.out.println("Вес спорт-завтрака в килограммах - " + (double) recipeInGram/1000);
+        System.out.println("Вес спорт-завтрака в килограммах - " + (float) recipeInGram/1000);
+
+        System.out.println("--------------Задача 7-------------------------");
+
+        int loseWeight = 7; // Сбросить всего в кг
+        int loseWeightInDay_250 = 250; // план 250 грамм в день
+        int loseWeightInDay_500 = 500; // план 500 грамм в день
+
+        int totalDay_250 = loseWeight * 1000 / loseWeightInDay_250; // Всего дней если, норма 250 в день
+        int totalDay_500 = loseWeight * 1000 / loseWeightInDay_500; // Всего дней если, норма 500 в день
+
+        int averageDay = (totalDay_250+totalDay_500) / 2; // Среднее количество дней
+
+        System.out.println("Всего " + totalDay_250 + " дней если норма " + loseWeightInDay_250 + " грамм в день ");
+        System.out.println("Всего " + totalDay_500 + " дней если норма " + loseWeightInDay_500 + " грамм в день ");
+        System.out.println("Всего в среднем " + averageDay + " день");
+
     }
 }
