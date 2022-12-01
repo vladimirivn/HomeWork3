@@ -50,5 +50,24 @@ public class Main {
         short totalPapers = 480;
         int papersPerStudent = totalPapers / (firstClassroom + secondClassroom + thirdClassroom);
         System.out.println("На каждого ученика рассчитано " + papersPerStudent + " листов бумаги");
+
+        System.out.println("--------------Задача 4-------------------------");
+
+        int twoMinutes = 16; // продуктивность за 2 минуты
+        int perMinute = twoMinutes / 2 ; // продуктивность в минуту
+        int perTwentyMinutes = perMinute * 20; // продуктивность за 20 минут
+        int perHour = perMinute * 60; // продуктивность в час
+        int perDay = perHour * 24;  // продуктивность в сутки
+        int perThreeDays = perDay * 3; // продуктивность за 3 дня
+        int perMonth = perDay * 30; // будем считать, что 30 дней в месяце
+
+        System.out.println("За 2 минуты машина произвела бутылок " + twoMinutes + " штук");
+        System.out.println("За 20 минут машина произвела бутылок " + perTwentyMinutes + " штук");
+        System.out.println("За сутки машина произвела бутылок " + perDay + " штук");
+        System.out.println("За 3 дня машина произвела бутылок " + perThreeDays + " штук");
+        System.out.println("За месяц машина произвела бутылок " + perMonth + " штук");
+
+
+
     }
 }
