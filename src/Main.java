@@ -102,14 +102,15 @@ public class Main {
 
         System.out.println("--------------Задача 8-------------------------");
 
-        int currentSalaryMasha =  67760;
-        int currentSalaryDenis =  83690;
-        int currentSalaryKristina =  76230;
-        int increaseSalary = 110;
+        int currentSalaryMasha =  67760;  // текущаа ЗП
+        int currentSalaryDenis =  83690; // текущаа ЗП
+        int currentSalaryKristina =  76230; // текущаа ЗП
+        int increaseSalary = 110; // увеличение ЗП на 10%
 
-        int afterIncreaseMasha = (currentSalaryMasha * increaseSalary / 100);
-        int afterIncreaseDenis = (currentSalaryDenis * increaseSalary / 100);
-        int afterIncreaseKristina = (currentSalaryKristina * increaseSalary /100);
+        int afterIncreaseMasha = (currentSalaryMasha * increaseSalary / 100); // ЗП после повышения
+        int afterIncreaseDenis = (currentSalaryDenis * increaseSalary / 100); // ЗП после повышения
+        int afterIncreaseKristina = (currentSalaryKristina * increaseSalary /100); // ЗП после повышения
+
         System.out.println("Маша теперь получает " + afterIncreaseMasha + " рублей. Годовой доход вырос на " + (afterIncreaseMasha-currentSalaryMasha) +" рублей");
         System.out.println("Денис теперь получает " + afterIncreaseDenis + " рублей. Годовой доход вырос на " + (afterIncreaseDenis-currentSalaryDenis) +" рублей");
         System.out.println("Кристина теперь получает " + afterIncreaseKristina + " рублей. Годовой доход вырос на " + (afterIncreaseKristina-currentSalaryKristina) +" рублей");
