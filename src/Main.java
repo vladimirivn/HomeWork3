@@ -94,7 +94,7 @@ public class Main {
         int totalDay_250 = loseWeight * 1000 / loseWeightInDay_250; // Всего дней если, норма 250 в день
         int totalDay_500 = loseWeight * 1000 / loseWeightInDay_500; // Всего дней если, норма 500 в день
 
-        int averageDay = (totalDay_500 + totalDay_250) /2; // не правильно !!!
+        int averageDay = (totalDay_500 + totalDay_250) / 2; //
 
         System.out.println("Всего " + totalDay_250 + " дней если норма " + loseWeightInDay_250 + " грамм в день ");
         System.out.println("Всего " + totalDay_500 + " дней если норма " + loseWeightInDay_500 + " грамм в день ");
