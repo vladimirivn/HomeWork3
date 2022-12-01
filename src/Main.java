@@ -94,11 +94,25 @@ public class Main {
         int totalDay_250 = loseWeight * 1000 / loseWeightInDay_250; // Всего дней если, норма 250 в день
         int totalDay_500 = loseWeight * 1000 / loseWeightInDay_500; // Всего дней если, норма 500 в день
 
-        int averageDay = (totalDay_250+totalDay_500) / 2; // Среднее количество дней
+        int averageDay = (totalDay_500 + totalDay_250) /2; // не правильно !!!
 
         System.out.println("Всего " + totalDay_250 + " дней если норма " + loseWeightInDay_250 + " грамм в день ");
         System.out.println("Всего " + totalDay_500 + " дней если норма " + loseWeightInDay_500 + " грамм в день ");
         System.out.println("Всего в среднем " + averageDay + " день");
+
+        System.out.println("--------------Задача 8-------------------------");
+
+        int currentSalaryMasha =  67760;
+        int currentSalaryDenis =  83690;
+        int currentSalaryKristina =  76230;
+        int increaseSalary = 110;
+
+        int afterIncreaseMasha = (currentSalaryMasha * increaseSalary / 100);
+        int afterIncreaseDenis = (currentSalaryDenis * increaseSalary / 100);
+        int afterIncreaseKristina = (currentSalaryKristina * increaseSalary /100);
+        System.out.println("Маша теперь получает " + afterIncreaseMasha + " рублей. Годовой доход вырос на " + (afterIncreaseMasha-currentSalaryMasha) +" рублей");
+        System.out.println("Денис теперь получает " + afterIncreaseDenis + " рублей. Годовой доход вырос на " + (afterIncreaseDenis-currentSalaryDenis) +" рублей");
+        System.out.println("Кристина теперь получает " + afterIncreaseKristina + " рублей. Годовой доход вырос на " + (afterIncreaseKristina-currentSalaryKristina) +" рублей");
 
     }
 }
