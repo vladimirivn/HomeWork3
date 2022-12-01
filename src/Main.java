@@ -79,8 +79,19 @@ public class Main {
         System.out.println("В школе, где "+ totalClass + " классов, нужно "+totalWhite
                 + " банок белой краски и "+totalBrown + " банок коричневой краски");
 
+        System.out.println("--------------Задача 6-------------------------");
 
+        byte numBananas = 5;  // количество бананов
+        byte weightOneBananа = 80; // вес одгого банана в граммах
+        int volumeMilk = 200; // объем молока в мл
+        byte weightVolumeMilk_100 = 105; // граммов в 100 мл молока
+        byte numIceCream = 2; // количество брикетов мороженного
+        byte weightOneIceCream = 100; // вес одного брикета мороженного в граммах
+        byte numEgg = 4; // количество яиц
+        byte weightOneEgg = 70; // вес одного яйца в граммах
 
-
+        int recipeInGram = numBananas * weightOneBananа + volumeMilk/100 * weightVolumeMilk_100 + numIceCream * weightOneIceCream + numEgg * weightOneEgg;
+        System.out.println("Вес спорт-завтрака в граммах - " + recipeInGram);
+        System.out.println("Вес спорт-завтрака в килограммах - " + (double) recipeInGram/1000);
     }
 }
